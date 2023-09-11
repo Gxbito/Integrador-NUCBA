@@ -14,14 +14,20 @@
             <div class="img__container">
                 <img src="./imgs/Nav__Icon.svg" alt="League of Trainers">
             </div>
-            <ul class="navbar__list">
-                <li class="nav__items"><a href="#benefits">Benefits</a></li>
-                <li class="nav__items"><a href="#start">Begin</a></li>
-                <li class="nav__items"><a href="#prices">Prices</a></li>
-            </ul>
-            <div class="nav__buttons">
-                <a href="./log-in.html">Log In</a>
-                <a href="./sign-up.html">Sign Up</a>
+            <label for="nav__toggle__menu" class="nav__menu">
+                <img src="./imgs/Nav__menu__icon.svg" alt="">
+            </label>
+            <input type="checkbox" name="" id="nav__toggle__menu">
+            <div class="navbar__list__container">
+                <ul class="navbar__list">
+                    <li class="nav__items"><a href="#benefits">Benefits</a></li>
+                    <li class="nav__items"><a href="#start">Begin</a></li>
+                    <li class="nav__items"><a href="#prices">Prices</a></li>
+                </ul>
+                <div class="nav__buttons">
+                    <a href="./log-in.html">Log In</a>
+                    <a href="./sign-up.html">Sign Up</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -58,6 +64,11 @@
             <div class="benefits__left">
                 <h2 class="benefits__title">Benefits</h2>
                 <p class="benefits__subtitle">Meet our <b>benefits</b></p>
+                <div class="benefits__cards">
+                    <h3>Improve your skills</h3>
+                    <h3>Learn from the best</h3>
+                    <h3>Make new friends</h3>
+                </div>
                 <div class="benefits">
                     <p><b>Improve your skills:</b> A gaming coaching service can help you improve your skills in a
                         variety
@@ -78,7 +89,7 @@
                     </p>
                 </div>
                 <div class="brand__container">
-                    <h2>League of Trainer</h2>
+                    <h2>LEAGUE OF TRAINERS</h2>
                 </div>
             </div>
             <div class="benefits__img__container">
@@ -99,62 +110,64 @@
                     <p><b>Start to practice:</b> Connect with coaches via Discord to start boosting your skills.</p>
                 </div>
                 <div class="brand__container">
-                    <h2>League of Trainer</h2>
+                    <h2>LEAGUE OF TRAINERS</h2>
                 </div>
             </div>
         </section>
         <section class="card__section" id="prices">
-            <div class="card__title__container">
-                <h2 class="card__title">Our training <b>plans</b></h2>
-                <h3 class="card__subtitle">Start your way to the <b>victory</b>, become a <b>champion.</b></h3>
-            </div>
-            <div class="card__container">
-                <div class="card card__1">
-                    <div class="card__data">
-                        <h3>Basic</h3>
-                        <p class="card__price">$<b>100</b></p>
-                        <p class="card__time">6 <b>Months</b></p>
-                        <div class="card__line"></div>
-                        <div class="card__text">
-                            <p>Personal trainer</p>
-                            <p>Progression analysis</p>
-                            <p>Training routine</p>
-                        </div>
-                    </div>
-                    <div class="card__button__container">
-                        <button>Buy</button>
-                    </div>
+            <div class="card__content">
+                <div class="card__title__container">
+                    <h2 class="card__title">Our training <b>plans</b></h2>
+                    <h3 class="card__subtitle">Start your way to the <b>victory</b>, become a <b>champion.</b></h3>
                 </div>
-                <div class="card card__2">
-                    <div class="card__data">
-                        <h3>Advanced</h3>
-                        <p class="card__price">$<b>200</b></p>
-                        <p class="card__time">12 <b>Months</b></p>
-                        <div class="card__line"></div>
-                        <div class="card__text">
-                            <p><b>Basic</b> benefits</p>
-                            <p>Live analysis</p>
-                            <p>Matches with professionals</p>
+                <div class="card__container">
+                    <div class="card card__1">
+                        <div class="card__data">
+                            <h3>Basic</h3>
+                            <p class="card__price">$<b>100</b></p>
+                            <p class="card__time">6 <b>Months</b></p>
+                            <div class="card__line"></div>
+                            <div class="card__text">
+                                <p>Personal trainer</p>
+                                <p>Progression analysis</p>
+                                <p>Training routine</p>
+                            </div>
+                        </div>
+                        <div class="card__button__container">
+                            <button>Buy</button>
                         </div>
                     </div>
-                    <div class="card__button__container">
-                        <button>Buy</button>
-                    </div>
-                </div>
-                <div class="card card__3">
-                    <div class="card__data">
-                        <h3>Pro</h3>
-                        <p class="card__price">$<b>400</b></p>
-                        <p class="card__time">24 <b>Months</b></p>
-                        <div class="card__line"></div>
-                        <div class="card__text">
-                            <p><b>Advanced</b> benefits</p>
-                            <p>Access to tournaments</p>
-                            <p>Access to competitive teams</p>
+                    <div class="card card__2">
+                        <div class="card__data">
+                            <h3>Advanced</h3>
+                            <p class="card__price">$<b>200</b></p>
+                            <p class="card__time">12 <b>Months</b></p>
+                            <div class="card__line"></div>
+                            <div class="card__text">
+                                <p><b>Basic</b> benefits</p>
+                                <p>Live analysis</p>
+                                <p>Matches with professionals</p>
+                            </div>
+                        </div>
+                        <div class="card__button__container">
+                            <button>Buy</button>
                         </div>
                     </div>
-                    <div class="card__button__container">
-                        <button>Buy</button>
+                    <div class="card card__3">
+                        <div class="card__data">
+                            <h3>Pro</h3>
+                            <p class="card__price">$<b>400</b></p>
+                            <p class="card__time">24 <b>Months</b></p>
+                            <div class="card__line"></div>
+                            <div class="card__text">
+                                <p><b>Advanced</b> benefits</p>
+                                <p>Access to tournaments</p>
+                                <p>Access to competitive teams</p>
+                            </div>
+                        </div>
+                        <div class="card__button__container">
+                            <button>Buy</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,6 +176,7 @@
             <div class="footer__background__filter"></div>
             <div class="footer__content">
                 <div class="footer__items__container">
+                    <h4>Follow Us</h4>
                     <h3 class="footer__subtitle">Explore more info here, click our social networks</h3>
                     <div class="footer__icons">
                         <a href="https://twitter.com/?lang=es"></a>

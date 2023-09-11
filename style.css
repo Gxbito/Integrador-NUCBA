@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary-color: #c4c4c4;
+    --primary-color: #e2e2e2;
     --secondary_color: #37A4D1;
 }
 
@@ -29,15 +29,28 @@ header {
     z-index: 3;
 }
 
+.navbar label,
+.navbar input {
+    display: none;
+}
+
 .img__container {
     width: 75px;
     height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img__container img {
     position: absolute;
     width: 75px;
     height: 90px;
+}
+
+.navbar__list__container {
+    display: flex;
+    gap: 200px;
 }
 
 .navbar__list {
@@ -51,7 +64,7 @@ header {
     list-style: none;
 }
 
-.nav__items a{
+.nav__items a {
     text-decoration: none;
     color: var(--primary-color);
     text-align: center;
@@ -273,6 +286,10 @@ header {
     align-items: center;
 }
 
+.benefits h3 {
+    display: none;
+}
+
 .benefits__background {
     position: absolute;
     height: 1080px;
@@ -478,12 +495,15 @@ header {
 .card__section {
     width: 100%;
     height: 1080px;
+    background-image: url(./imgs/Cards__Background__Img.png);
+}
+
+.card__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./imgs/Cards__Background__Img.png);
-    padding: 30px 0px 50px 0px;
+    height: 100%;
 }
 
 .card__title__container {
@@ -526,7 +546,7 @@ header {
 }
 
 .card__container {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -649,7 +669,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(./imgs/Footer__Background__Img.jpg);
+    background-image: url(./imgs/Benefits__Background__Img.png);
     background-repeat: no-repeat;
 }
 
@@ -659,6 +679,7 @@ header {
     background-image: url(./imgs/Footer__Background--filter.svg);
     position: absolute;
     z-index: 1;
+    filter: brightness(100%);
 }
 
 .footer__brand__logo {
@@ -703,6 +724,10 @@ header {
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+.footer__items__container h4:nth-child(1) {
+    display: none;
 }
 
 .footer__subtitle {
@@ -773,7 +798,7 @@ header {
     background-image: url(./imgs/Footer___Discord\(Color\)__Icon.svg);
 }
 
-.footer__menu__list{
+.footer__menu__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -781,7 +806,7 @@ header {
     list-style: none;
 }
 
-.footer__menu__list li > a {
+.footer__menu__list li>a {
     color: var(--primary-color);
     font-family: Kanit;
     font-size: 30px;
@@ -824,7 +849,7 @@ header {
 }
 
 
-.footer__terms__container ul{
+.footer__terms__container ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -832,7 +857,7 @@ header {
     list-style: none;
 }
 
-.footer__terms__container ul > li > a{
+.footer__terms__container ul>li>a {
     color: var(--primary-color);
     font-family: Kanit;
     font-size: 20px;
@@ -1301,6 +1326,11 @@ header {
 }
 
 @media (max-width: 1536px) {
+
+    .navbar__list__container {
+        gap: 150px;
+    }
+
     .hero__sponsors {
         width: 650px;
     }
@@ -1339,14 +1369,19 @@ header {
         height: 70px;
     }
 
-    .nav__items a{
+    .nav__items a {
         font-size: 20px;
     }
 
-    .nav__buttons a:nth-child(1), .nav__buttons a:nth-child(2) {
+    .nav__buttons a:nth-child(1),
+    .nav__buttons a:nth-child(2) {
         width: 130px;
         height: 45px;
         font-size: 18px;
+    }
+
+    .navbar__list {
+        gap: 100px;
     }
 
     .hero__background--filter,
@@ -1362,7 +1397,8 @@ header {
         margin-top: 30px;
     }
 
-    .hero__left h1, .hero__left h1 > b {
+    .hero__left h1,
+    .hero__left h1>b {
         font-size: 70px;
     }
 
@@ -1377,7 +1413,8 @@ header {
         gap: 60px;
     }
 
-    .hero__buttons a:nth-child(1), .hero__buttons a:nth-child(2) {
+    .hero__buttons a:nth-child(1),
+    .hero__buttons a:nth-child(2) {
         width: 160px;
         height: 50px;
         font-size: 18px;
@@ -1427,7 +1464,8 @@ header {
         width: 1025px;
     }
 
-    .guide__title, .guide__title b {
+    .guide__title,
+    .guide__title b {
         font-size: 80px;
     }
 
@@ -1454,19 +1492,23 @@ header {
         width: 1010px;
     }
 
-    .card__title, .card__title b {
+    .card__title,
+    .card__title b {
         font-size: 70px;
     }
 
-    .card__subtitle, .card__subtitle b {
+    .card__subtitle,
+    .card__subtitle b {
         font-size: 22px;
     }
 
     .card__container {
         margin-top: 40px;
-        gap: 50px;
+        padding: 0px 60px;
+    }
+
+    .card {
         scale: 0.8;
-        padding: 0px;
     }
 
     .footer__subtitle {
@@ -1479,7 +1521,7 @@ header {
         width: 42px;
     }
 
-    .footer__menu__list li > a {
+    .footer__menu__list li>a {
         font-size: 25px;
     }
 
@@ -1497,14 +1539,17 @@ header {
         font-size: 12px;
     }
 
-    .footer__terms__container ul > li > a{
+    .footer__terms__container ul>li>a {
         font-size: 16px;
     }
-
-
 }
 
 @media (max-width: 1280px) {
+
+    .navbar__list {
+        gap: 80px;
+    }
+
     .hero__img img {
         height: 475px;
         width: 530px;
@@ -1514,18 +1559,19 @@ header {
         margin-top: 60px;
     }
 
-    .hero__left h1, .hero__left h1 > b {
+    .hero__left h1,
+    .hero__left h1>b {
         font-size: 66px;
     }
 
     .hero__left p {
         width: 500px;
         font-size: 18px;
-        margin: 40px 0px 40px 0px; 
+        margin: 40px 0px 40px 0px;
     }
 
     .hero__sponsors {
-       display: none;
+        display: none;
     }
 
     .hero__background--filter,
@@ -1536,6 +1582,7 @@ header {
     .hero__content {
         height: calc(700px - 240px);
     }
+
     .benefits__container,
     .benefits__background,
     .benefits__img--shadow,
@@ -1546,12 +1593,12 @@ header {
     .guide__right,
     .card__section,
     .benefits__img__container img,
-    .guide__img__container img
-     {
+    .guide__img__container img {
         height: 700px;
     }
 
-    .benefits__img__container img, .guide__img__container img {
+    .benefits__img__container img,
+    .guide__img__container img {
         width: 850px;
     }
 
@@ -1559,13 +1606,437 @@ header {
         width: 520px;
     }
 
+    .card {
+        scale: 0.75;
+    }
+
     .card__container {
-        width: 100%;
         height: 450px;
     }
 
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1180px) {
+
+    .img__container {
+        position: absolute;
+        left: 50px;
+        top: 25px;
+        z-index: 5;
+    }
+
+    .navbar label,
+    .navbar input {
+        display: block;
+    }
+
+    .nav__menu img {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        right: 50px;
+        top: 35px;
+        background-color: black;
+        z-index: 5;
+    }
+
+    .navbar input:checked+.navbar__list__container {
+        transform: translateY(0px);
+    }
+
+    .navbar__list__container {
+        width: 100%;
+        height: 520px;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        transform: translateY(-1000px);
+        background-color: black;
+        top: 0;
+        left: 0;
+        gap: 60px;
+        padding: 115px 0px;
+        z-index: 4;
+        transition: all 0.5s ease;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav__buttons {
+        flex-direction: column;
+    }
+
+    .hero__left {
+        z-index: 2;
+    }
+
+    .hero__img,
+    .benefits__img__container,
+    .benefits__img--filter,
+    .benefits__img--shadow,
+    .guide__img__container,
+    .guide__background--filter,
+    .guide__background--shadow,
+    .guide__img__container,
+    .footer__background__filter {
+        display: none;
+    }
+
+    .hero__content {
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .hero__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .hero__left h1 {
+        width: 600px;
+        text-align: center;
+    }
+
+    .hero__left p {
+        width: 500px;
+        text-align: center;
+    }
+
+    .hero__buttons {
+        margin-top: 20px;
+    }
+
+    .benefits__left,
+    .guide__right {
+        position: initial;
+    }
+
+    .benefits__title {
+        font-size: 60px;
+    }
+
+    .benefits__subtitle,
+    .benefits__subtitle b {
+        font-size: 22px;
+    }
+
+    .benefits__left {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 25px 0px;
+        backdrop-filter: brightness(20%);
+        gap: 0px;
+    }
+
+    .benefits {
+        display: none;
+    }
+
+    .benefits__cards h3 {
+        display: flex;
+        width: 320px;
+        height: 115px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        color: var(--primary-color);
+        text-align: center;
+        font-family: UNDERRATED;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .benefits__cards h3:nth-child(1) {
+        background-image: url(./imgs/Benefits__Card__Background\(1\).jpg);
+    }
+
+    .benefits__cards h3:nth-child(2) {
+        background-image: url(./imgs/Benefits__Card__Background\(2\).jpg);
+    }
+
+    .benefits__cards h3:nth-child(3) {
+        background-image: url(./imgs/Benefits__Card__Background\(3\).jpg);
+    }
+
+    .benefits__cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .brand__container {
+        width: 245px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .brand__container h2 {
+        width: 200px;
+        color: #CBCBCB;
+        text-align: center;
+        font-family: UNDERRATED;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .guide__section {
+        justify-content: center;
+    }
+
+    .guide__right {
+        width: 100%;
+        align-items: center;
+        backdrop-filter: brightness(20%);
+    }
+
+    .guide__title,
+    .guide__title b {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .guide {
+        height: auto;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .guide p {
+        height: auto;
+        width: 330px;
+    }
+
+    .guide p>b {
+        margin: 0px 80px;
+    }
+
+    .card__section {
+        height: 1850px;
+    }
+
+    .card__content {
+        backdrop-filter: brightness(20%);
+        padding: 30px 0px 100px 0px;
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .card__container {
+        height: auto;
+        gap: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        height: 500px;
+        scale: 1;
+    }
+
+    .footer__content {
+        backdrop-filter: brightness(20%);
+    }
+
+
 
 }
+
+@media (max-width: 800px) {
+
+    .hero__left,
+    .hero__left h1,
+    .hero__left p {
+        width: auto;
+    }
+
+    .card__title,
+    .card__subtitle {
+        text-align: center;
+    }
+
+    .card__section {
+        height: 1980px;
+    }
+
+    .footer__container,
+    .footer__content {
+        height: 850px;
+    }
+
+    .footer__content {
+        padding: 30px 0px;
+    }
+
+    .footer__subtitle {
+        display: none;
+    }
+
+    .footer__icons {
+        order: 3;
+    }
+
+    .footer__items__container {
+        margin-bottom: 40px;
+    }
+
+    .footer__items__container h4:nth-child(1) {
+        display: block;
+        order: 2;
+        color: var(--primary-color);
+        font-family: Kanit;
+        font-size: 25px;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+
+    .footer__menu__list {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer__menu__list li>a {
+        font-size: 30px;
+    }
+
+    .footer__brand__logo--small {
+        display: none;
+    }
+
+    .footer__extra,
+    .footer__terms__container ul {
+        flex-direction: column;
+        border: none;
+        gap: 35px;
+    }
+
+    .footer__terms__container ul>li>a {
+        font-size: 22px;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+    .card__section {
+        height: 2080px;
+    }
+
+    .footer__icons {
+        gap: 25px;
+    }
+
+    .guide__title {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .nav__menu img {
+        right: 40px;
+    }
+
+    .img__container img {
+        right: 30px;
+        top: 3px;
+    }
+
+    .hero__left h1,
+    .hero__left h1>b {
+        font-size: 60px;
+    }
+
+    .hero__buttons {
+        gap: 20px;
+    }
+
+    .card__title,
+    .card__title b {
+        font-size: 60px;
+    }
+
+    .card__subtitle .card__subtitle b {
+        font-size: 20px;
+    }
+
+    .card {
+        scale: 0.9;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero__buttons {
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .hero__left h1,
+    .hero__left h1>b {
+        font-size: 50px;
+    }
+
+    .hero__left p {
+        font-size: 16px;
+        margin: 25px 0px;
+    }
+
+    .hero__buttons {
+        flex-direction: column;
+    }
+
+    .benefits__title {
+        font-size: 50px;
+    }
+
+    .benefits__cards {
+        scale: 0.9;
+    } 
+
+    .guide {
+        gap: 40px;
+    }
+
+    .guide p {
+        text-align: center;
+        width: 260px;
+    }
+
+    .guide p>b {
+        margin: 0px;
+    }
+
+    .guide__title, .guide__title b {
+        font-size: 50px;
+    }
+
+    .card__container {
+        padding: 0px;
+    }
+
+    .card__subtitle, .card__subtitle b {
+        font-size: 20px;
+    }
+
+    .card {
+        scale: 0.8;
+    }
+
+    .footer__icons {
+        gap: 15px;
+    }
+}
+
+
