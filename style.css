@@ -1158,11 +1158,7 @@ header {
 }
 
 .log-in__brand__container h3 {
-    color: var(--primary-color);
-    font-family: UNDERRATED;
-    font-size: 28px;
-    font-weight: 800;
-    text-transform: uppercase;
+    display: none;
 }
 
 .log-in__formulary h2 {
@@ -1355,6 +1351,10 @@ header {
     .sign-up__button {
         width: 454px;
         height: 63.386px;
+    }
+
+    .log-in__container, .log-in__img {
+        height: 900px;
     }
 
 }
@@ -1632,6 +1632,26 @@ header {
         margin-top: 40px;
     }
 
+    .log-in__container, .log-in__img {
+        height: 768px;
+    }
+
+    .log-in__formulary h2 {
+        margin-top: 10px;
+    }
+
+    .log-in__inputs__container input {
+        height: 70px;
+    }
+
+    .log-in__inputs__container label {
+        margin-top: 40px;
+    }
+
+    .log-in__img h1 {
+        font-size: 140px;
+    }
+
 }
 
 @media (max-width: 1280px) {
@@ -1765,6 +1785,27 @@ header {
     .sign-up__button {
         margin-top: 40px;
         font-size: 25px;
+    }
+
+    .log-in__container, .log-in__img {
+        height: 700px;
+    }
+
+    .log-in__formulary h2 {
+        margin-top: 0px;
+        font-size: 55px;
+    }
+
+    .log-in__subtitle, .log-in__subtitle a, .log-in__recover__password, .log-in__recover__password a {
+        font-size: 23px;
+    }
+
+    .log-in__inputs__container input {
+        height: 70px;
+    }
+
+    .log-in__inputs__container label {
+        margin-top: 20px;
     }
 
 }
@@ -2029,6 +2070,22 @@ header {
     .sign-up__brand__logo {
         width: 100%;
     }
+
+    .log-in__img {
+        display: none;
+    }
+
+    .log-in__container {
+        height: 100vh;
+    }
+
+    .log-in__formulary__container {
+        width: 100%;
+    }
+
+    .log-in__formulary {
+        height: 100%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -2102,8 +2159,6 @@ header {
     .footer__terms__container ul>li>a {
         font-size: 22px;
     }
-
-
 
 }
 
