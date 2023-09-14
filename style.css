@@ -914,7 +914,6 @@ header {
 }
 
 .sign-up__left {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1038,6 +1037,7 @@ header {
     font-weight: 800;
     margin-top: 60px;
     cursor: pointer;
+    border: none;
 }
 
 .sign-up__icons {
@@ -1323,6 +1323,40 @@ header {
     .footer__menu__list li a {
         font-size: 30px;
     }
+
+    .sign-up__container,
+    .sign-up__background--filter,
+    .sign-up__img {
+        height: 900px;
+    }
+
+    .sign-up__img {
+        width: 1180px;
+    }
+
+    .sign-up__content {
+        padding: 0px 120px 0px 200px;
+    }
+
+    .sign-up__inputs__container {
+        width: 454px;
+    }
+
+    .sign-up__inputs__container input {
+        width: 454px;
+        height: 65px;
+    }
+
+    .sign-up__short__inputs input {
+        width: 210px;
+        height: 65px;
+    }
+
+    .sign-up__button {
+        width: 454px;
+        height: 63.386px;
+    }
+
 }
 
 @media (max-width: 1536px) {
@@ -1542,6 +1576,62 @@ header {
     .footer__terms__container ul>li>a {
         font-size: 16px;
     }
+
+    .sign-up__container,
+    .sign-up__background--filter,
+    .sign-up__img {
+        height: 768px;
+    }
+
+    .sign-up__img {
+        width: 1006px;
+    }
+
+    .sign-up__content {
+        padding: 0px 100px 0px 200px;
+    }
+
+    .sign-up__inputs__container {
+        width: 424.615px;
+    }
+
+    .sign-up__inputs__container input {
+        width: 424.615px;
+        height: 60px;
+    }
+
+    .sign-up__short__inputs input {
+        width: 193.846px;
+        height: 60px;
+    }
+
+    .sign-up__button {
+        width: 424.62px;
+        height: 59.284px;
+    }
+
+    .sign-up__left h2 {
+        font-size: 55px;
+    }
+
+    .sign-up__subtitle,
+    .sign-up__subtitle a {
+        font-size: 28px;
+    }
+
+    .sign-up__inputs__container {
+        margin: 0px;
+    }
+
+    .sign-up__inputs__container label {
+        margin-top: 18px;
+        font-size: 22px;
+    }
+
+    .sign-up__button {
+        margin-top: 40px;
+    }
+
 }
 
 @media (max-width: 1280px) {
@@ -1612,6 +1702,69 @@ header {
 
     .card__container {
         height: 450px;
+    }
+
+    .sign-up__container,
+    .sign-up__background--filter,
+    .sign-up__img {
+        height: 700px;
+    }
+
+    .sign-up__img {
+        width: 916px;
+    }
+
+    .sign-up__content {
+        padding: 0px 100px 0px 200px;
+    }
+
+    .sign-up__inputs__container {
+        width: 388px;
+    }
+
+    .sign-up__inputs__container input {
+        width: 388px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .sign-up__inputs__container input::placeholder,
+    .sign-up__short__inputs input::placeholder {
+        font-size: 20px;
+    }
+
+    .sign-up__short__inputs input {
+        width: 178.02px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .sign-up__button {
+        width: 388px;
+        height: 59.284px;
+    }
+
+    .sign-up__left h2 {
+        font-size: 53px;
+    }
+
+    .sign-up__subtitle,
+    .sign-up__subtitle a {
+        font-size: 25px;
+    }
+
+    .sign-up__inputs__container {
+        margin: 0px;
+    }
+
+    .sign-up__inputs__container label {
+        margin-top: 18px;
+        font-size: 22px;
+    }
+
+    .sign-up__button {
+        margin-top: 40px;
+        font-size: 25px;
     }
 
 }
@@ -1849,8 +2002,33 @@ header {
         backdrop-filter: brightness(20%);
     }
 
+    .sign-up__container,
+    .sign-up__background--filter {
+        height: 800px;
+    }
 
+    .sign-up__img, .sign-up__icons {
+        display: none;
+    }
 
+    .sign-up__content {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up__left {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up__brand__logo h3 {
+        display: none;
+    }
+
+    .sign-up__brand__logo {
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -2003,7 +2181,7 @@ header {
 
     .benefits__cards {
         scale: 0.9;
-    } 
+    }
 
     .guide {
         gap: 40px;
@@ -2018,7 +2196,8 @@ header {
         margin: 0px;
     }
 
-    .guide__title, .guide__title b {
+    .guide__title,
+    .guide__title b {
         font-size: 50px;
     }
 
@@ -2026,7 +2205,8 @@ header {
         padding: 0px;
     }
 
-    .card__subtitle, .card__subtitle b {
+    .card__subtitle,
+    .card__subtitle b {
         font-size: 20px;
     }
 
@@ -2038,5 +2218,3 @@ header {
         gap: 15px;
     }
 }
-
-
